@@ -1,0 +1,89 @@
+:root {
+  --font-size: 1rem;
+  --font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --color-main: #f3f7fd;
+  --color-1: #e7ebfd;
+  --color-2: #4baee9;
+}
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1560px;
+  padding: 0 2rem;
+  background: var(--color-main);
+}
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+  /* SKILL */
+}
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .section {
+    flex-direction: column;
+  }
+  .section .column-left {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-left {
+    align-items: center;
+  }
+  .header .column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .header .content-right {
+    text-align: center;
+    align-items: center;
+  }
+  /* SKILL */
+  .skill .container .bottom {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-auto-rows: minmax(280px, auto);
+  }
+  .content-top {
+    align-items: center;
+    text-align: center;
+  }
+  .soft-skill {
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 600px;
+  }
+  .header .nganh {
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+  .Aboutme .link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .Aboutme .image1 {
+    display: none;
+  }
+  .Aboutme .image2 {
+    display: none;
+  }
+}
